@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    <!--android:background="#C8FFFFFF"-->
+    <LinearLayout
+        android:id="@+id/load_failure_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/v_load_bg"
+        android:orientation="vertical"
+        android:padding="5dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/loadimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/comm_loading_not_data" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/v_load_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <com.dereck.library.view.AnimRotationView
+            android:id="@+id/animRotationView"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+
+            android:src="@mipmap/comm_loading_icon" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="加载中,请稍候"
+            android:textColor="#9B9B9B"
+            android:textScaleX="1.1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

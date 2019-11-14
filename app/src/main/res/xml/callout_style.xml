@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <calloutStyle
+        backgroundColor="#FFC0C0C0"
+    borderColor="@android:color/white"
+    borderWidth="4"
+    cornerRadius="50"
+    maxHeight="35"
+    maxWidth="35"
+    minHeight="35"
+    minWidth="200"
+    leaderPosition="AUTOMATIC"
+    leaderLength="10"
+    leaderWidth="20"
+
+    />
+   </resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_top"/>
+        <com.wavenet.ding.qpps.view.ViewMapUtil
+            android:id="@+id/vmu_maptuil"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"></com.wavenet.ding.qpps.view.ViewMapUtil>
+    </LinearLayout>
+
+    <com.wavenet.ding.qpps.view.viewutils.scrollLayout.ScrollLayoutView
+        android:id="@+id/scroll_down_layoutm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp40"
+
+        android:background="@color/transparent">
+        <com.wavenet.ding.qpps.view.viewutils.scrollLayout.ContentScrollView
+            android:id="@+id/content_scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_height="match_parent">
+
+                <com.wavenet.ding.qpps.view.ViewDetailJcsw
+                    android:id="@+id/v_jcsw"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"/>           <com.wavenet.ding.qpps.view.ViewDetailJcclc
+                android:id="@+id/v_jcclc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/transparent"/>           <com.wavenet.ding.qpps.view.ViewDetailJcbz
+                android:id="@+id/v_jcbz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:background="@color/transparent"/>
+            </LinearLayout>
+        </com.wavenet.ding.qpps.view.viewutils.scrollLayout.ContentScrollView>
+    </com.wavenet.ding.qpps.view.viewutils.scrollLayout.ScrollLayoutView>
+    <com.dereck.library.view.LoadingWaitView
+        android:id="@+id/loadingWaitView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

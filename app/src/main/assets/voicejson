@@ -1,0 +1,64 @@
+{
+    "mvc": [
+        {
+            "mVoice": ["积水监测"],
+            "mClass": "com.wavenet.app.admincitywater.activity.Ponding_Monitoring.PondingHomepage"
+        },
+        {
+            "mVoice": ["实时积水","下立交积水","下立交监测","道路积水","积水查询","积水列表"],
+            "mClass": "com.wavenet.app.admincitywater.activity.Ponding_Monitoring.RealtimeWaterActivity"
+        },
+        {
+            "mVoice": ["积水分布","下立交分布","下立交地图","积水地图"],
+            "mClass": "com.wavenet.app.admincitywater.activity.Ponding_Monitoring.WDActivity"
+        },
+        {
+            "mVoice":  ["积水统计"],
+            "mClass": "com.wavenet.app.admincitywater.activity.Ponding_Monitoring.SWActivity"
+        },
+        {
+            "mVoice":  ["历史积水"],
+            "mClass": "com.wavenet.app.admincitywater.activity.Ponding_Monitoring.HistoricalWaterActivity"
+        },
+        {
+            "mVoice":  ["雨量监测","雨情","雨量"],
+            "mClass": "com.wavenet.app.admincitywater.activity.RealTimeRainfall.RTrainlistActivity"
+        },
+        {
+            "mVoice":  ["积水报警","报警短信","报警列表","报警查询"],
+            "mClass": "com.wavenet.app.admincitywater.activity.CallpoliceActivity"
+        },
+        {
+            "mVoice":  ["报警统计"],
+            "mClass": "com.wavenet.app.admincitywater.activity.Ponding_Monitoring.ASActivity"
+        },
+        {
+            "mVoice":  ["水务热线","热线"],
+            "mClass": "com.wavenet.app.admincitywater.activity.Ponding_Monitoring.WSHActivity"
+        },
+        {
+            "mVoice":  ["运维记录","运维清单","运维统计"],
+            "mClass": "com.wavenet.app.admincitywater.activity.Ponding_Monitoring.ORActivity"
+        },
+        {
+            "mVoice":  ["运维调试"],
+            "mClass": "null"
+        },
+        {
+            "mVoice":  ["积水上报","人工上报"],
+            "mClass": "com.wavenet.app.admincitywater.activity.ReportRain.RRActivity"
+        },
+        {
+            "mVoice":  ["防汛预警","预警"],
+            "mClass": "com.wavenet.app.admincitywater.activity.PreventionHistoryActivity"
+        },
+        {
+             "mVoice":  ["设施管理","设施查询","管网查询","管网设施"],
+             "mClass": "com.wavenet.app.admincitywater.activity.Facility_Management.FacilityHomeActivity"
+         },
+        {
+             "mVoice":  ["防汛预警","泵车","应急","调度"],
+             "mClass": "com.wavenet.app.admincitywater.activity.Emergency_Dispatch.DispatchHomeActivity"
+        }
+    ]
+}

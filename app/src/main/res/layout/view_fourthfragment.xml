@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg">
+        <!--<HorizontalScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_height="@dimen/dp45">-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp45"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg_f"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/sp5"
+                android:layout_marginTop="@dimen/sp5"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_f1"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_rbbg_fourthfragment"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="排水井"
+                    android:textColor="@color/rg_fourthframeng_bg"
+                    android:textSize="@dimen/dp10" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_f3"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_rbbg_fourthfragment"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="排放口"
+                    android:textColor="@color/rg_fourthframeng_bg"
+                    android:textSize="@dimen/dp10" />
+
+                <RadioButton
+                    android:id="@+id/rb_f4"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_rbbg_fourthfragment"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="排水泵站"
+                    android:textColor="@color/rg_fourthframeng_bg"
+                    android:textSize="@dimen/dp10" />
+
+                <RadioButton
+                    android:id="@+id/rb_f5"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_rbbg_fourthfragment"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="污水处理厂"
+                    android:textColor="@color/rg_fourthframeng_bg"
+                    android:textSize="@dimen/dp10" />
+
+                <RadioButton
+                    android:id="@+id/rb_f6"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_rbbg_fourthfragment"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="重点排放口"
+                    android:textColor="@color/rg_fourthframeng_bg"
+                    android:textSize="@dimen/dp10" />
+
+                <RadioButton
+                    android:id="@+id/rb_f7"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_rbbg_fourthfragment"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="排水户"
+                    android:textColor="@color/rg_fourthframeng_bg"
+                    android:textSize="@dimen/dp10" />
+
+                <RadioButton
+                    android:id="@+id/rb_f2"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_rbbg_fourthfragment"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="排水管道"
+                    android:textColor="@color/rg_fourthframeng_bg"
+                    android:textSize="@dimen/dp10" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_shijsb_close" />
+        </RelativeLayout>
+        <!--</HorizontalScrollView>-->
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

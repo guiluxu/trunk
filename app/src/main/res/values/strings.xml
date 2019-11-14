@@ -1,0 +1,90 @@
+<resources>
+    <!--字体适配请勿删除-->
+    <string name="font_balck">fonts/Roboto-Black.ttf</string>
+    <string name="font_bold">fonts/Roboto-Bold.ttf</string>
+    <string name="font_medium">fonts/Roboto-Medium.ttf</string>
+    <string name="font_regular">fonts/Roboto-Regular.ttf</string>
+    <string name="font_roboto_thinItalic">fonts/Roboto-ThinItalic.ttf</string>
+    <string name="font_seguisb">fonts/seguisb.ttf</string>
+    <string name="font_gtw">fonts/gtw.ttf</string>
+    <string name="font_robotoCondensed_regular">fonts/RobotoCondensed-Regular.ttf</string>
+    <string name="font_oswald_stencbab">fonts/Oswald-Stencbab.ttf</string>
+
+
+    <string name="app_name">青浦排水</string>
+    <string name="Preservation">保存</string>
+    <string name="delete">删除</string>
+    <string name="all_pic">全部图片</string>
+    <string name="preview_without_num">预览</string>
+    <string name="preview_with_num">预览(%1$d)</string>
+    <string name="choose_pic_finish">完成</string>
+    <string name="choose_pic_finish_with_num">完成(%1$d/%2$d)</string>
+    <string name="choose_pic_num_out_of_index">你最多只能选择%1$d张照片</string>
+    <string name="choose_pic">选择</string>
+    <string name="not_choose_any_pick">你还没有选择任何图片</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="app_id">5b90b070</string>
+    <string name="xj_people">巡查人员</string>
+    <string name="yh_people">养护人员</string>
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>en_us</item>
+    </string-array>
+    <string-array name="ise_language_entries">
+        <item>英语</item>
+        <item>汉语</item>
+    </string-array>
+    <string-array name="ise_language_values">
+        <item>en_us</item>
+        <item>zh_cn</item>
+    </string-array>
+    <string-array name="category_entries">
+        <item>单字</item>
+        <item>词语</item>
+        <item>句子</item>
+    </string-array>
+    <string-array name="category_values">
+        <item>read_syllable</item>
+        <item>read_word</item>
+        <item>read_sentence</item>
+    </string-array>
+    <string-array name="result_level_entries">
+        <item>plain</item>
+        <item>complete</item>
+    </string-array>
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="dwa_entries">
+        <item>开启</item>
+        <item>关闭</item>
+    </string-array>
+    <!-- 听写 -->
+    <string name="text_begin">请开始说话…</string>
+    <string name="text_begin_recognizer">开始音频流识别</string>
+    <string name="text_upload_contacts">上传联系人</string>
+    <string name="text_upload_userwords">上传用户词表</string>
+    <string name="text_upload_success">上传成功</string>
+    <string name="text_userword_empty">词表下载失败或内容为空</string>
+    <string name="text_download_success">下载成功</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+
+    <string name="pref_key_translate">translate</string>
+    <string name="pref_title_translate">翻译</string>
+</resources>

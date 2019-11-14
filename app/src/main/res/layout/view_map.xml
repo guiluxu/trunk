@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <com.esri.arcgisruntime.mapping.view.MapView
+            android:id="@+id/mapv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.esri.arcgisruntime.mapping.view.MapView>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_shanghai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/btn_quanj" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+    <ImageView
+        android:id="@+id/iv_tuceng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/btn_map_tuceng" /> />
+    <!--android:background="@drawable/view_ms_bg"-->
+
+
+        <ImageView
+            android:id="@+id/iv_location"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp300"
+            android:scaleType="centerInside"
+            android:src="@mipmap/map_dwei" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+        <!--android:background="@drawable/view_ms_bgt"-->
+        <TextView
+            android:id="@+id/tv_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/btn_map_bigger"
+            android:scaleType="fitCenter" />
+
+        <View
+            style="@style/view_h01"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:visibility="gone" />
+        <!--android:background="@drawable/view_ms_bgb"-->
+        <TextView
+            android:id="@+id/tv_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:background="@mipmap/btn_map_small" />
+    </LinearLayout>
+    </LinearLayout>
+    <com.wavenet.ding.qpps.view.ViewMapLegend
+        android:id="@+id/vml_legend"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.dereck.library.view.LoadingWaitView
+        android:id="@+id/loadingWaitView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

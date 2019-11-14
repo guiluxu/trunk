@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_icon_location1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_shanghai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/btn_quanj" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/iv_tuceng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_map_tuceng" />
+        <ImageView
+            android:id="@+id/iv_gensui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_ivbg_xjgensui"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/iv_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_map_update"
+            android:visibility="visible" />
+        <!--android:background="@drawable/view_ms_bg"-->
+
+
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp200"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_sheshi_refresh"
+            />
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:scaleType="centerInside"
+            android:src="@mipmap/map_dwei" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+            <!--android:background="@drawable/view_ms_bgt"-->
+            <TextView
+                android:id="@+id/tv_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/btn_map_bigger"
+                android:scaleType="fitCenter" />
+
+            <View
+                style="@style/view_h01"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone" />
+            <!--android:background="@drawable/view_ms_bgb"-->
+            <TextView
+                android:id="@+id/tv_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:background="@mipmap/btn_map_small" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_doing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp300"
+        android:layout_marginRight="@dimen/dp10"
+        android:scaleType="centerInside"
+        android:src="@mipmap/map_jinzhan"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp250"
+        android:layout_marginRight="@dimen/dp10"
+        android:scaleType="centerInside"
+        android:src="@mipmap/map_bulu"
+        android:visibility="gone" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+
+        android:orientation="vertical">
+        <!--android:background="@drawable/shape_btnbg_kaishixunjian"-->
+
+    </LinearLayout>
+
+</RelativeLayout><!--android:background="@drawable/location_icon_selector"-->

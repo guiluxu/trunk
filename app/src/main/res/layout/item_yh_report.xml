@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10">
+
+        <ImageView
+            android:id="@+id/iv_mag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp10"
+            android:scaleType="centerInside"
+            android:src="@mipmap/radio_yes" />
+
+        <LinearLayout
+            android:id="@+id/ll_mag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp25">
+
+            <TextView
+                android:id="@+id/tv_mag1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="汇金路" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tasking_bg_green"
+                android:paddingBottom="@dimen/dp1"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:paddingTop="@dimen/dp1"
+                android:text="起"
+                android:textColor="#4ab867" />
+
+            <TextView
+                android:id="@+id/tv_mag2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="科华东路" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tasking_bg_orange"
+                android:paddingBottom="@dimen/dp1"
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:paddingTop="@dimen/dp1"
+                android:text="终"
+                android:textColor="#f98c26" />
+
+            <TextView
+                android:id="@+id/tv_mag3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:text="盈港东路" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

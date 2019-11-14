@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="styleStateView"/>
+    <color name="app_bg">#f2f2f2</color>
+    <color name="bg_color">#f2f2f2</color>
+    <color name="black">#000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorAccent">#03866c</color>
+    <color name="colorPrimary">#2b65d9</color>
+    <color name="colorPrimaryDark">#3377ff</color>
+    <color name="color_004ce6">#004ce6</color>
+    <color name="color_1a1a1a">#1a1a1a</color>
+    <color name="color_2B65d9">#2B65d9</color>
+    <color name="color_4d4d4d">#4d4d4d</color>
+    <color name="color_62baf5">#62baf5</color>
+    <color name="color_6fc2fd">#6fc2fd</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_999">#999999</color>
+    <color name="color_E0E0E0">#E0E0E0</color>
+    <color name="color_bengchegary">#EBEBEB</color>
+    <color name="color_defaulttext">#3d4245</color>
+    <color name="color_drakgay">#bfbfbf</color>
+    <color name="color_drakgreen">#00b344</color>
+    <color name="color_f04848">#f04848</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_homelinbg">#f0f0f0</color>
+    <color name="color_homemunebg2">#f1c31d</color>
+    <color name="color_lightgreen">#0fbf53</color>
+    <color name="color_ligthgay">#cccccc</color>
+    <color name="color_plan_type">#f07151</color>
+    <color name="color_plan_type_normal">#333333</color>
+    <color name="color_reportgary">#707a80</color>
+    <color name="color_text_333333">#333333</color>
+    <color name="color_text_normal">#666666</color>
+    <color name="comm_text_derkgray_color">#595959</color>
+    <color name="content_color">#737373</color>
+    <color name="default_bg">#EBEBEB</color>
+    <color name="ededed">#ededed</color>
+    <color name="evc_lfmitme">#595959</color>
+    <color name="found_description_color">#707a80</color>
+    <color name="line">#e1e1e1</color>
+    <color name="list_backgroud_color">#2fb3cb</color>
+    <color name="radio_btn">#666666</color>
+    <color name="tasking_blue">#231cf5</color>
+    <color name="tasking_green">#4ab867</color>
+    <color name="tasking_orange">#f98c26</color>
+    <color name="tasking_red">#f43232</color>
+    <color name="title_color">#0f8ec5</color>
+    <color name="touch_view_pressed_bgcolor">#15000000</color>
+    <color name="translucentwhite">#b6ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black_85">#3d4245</color>
+    <color name="tvc_realtimewater">#595959</color>
+    <color name="white">#FFFFFF</color>
+    <color name="window_bg_color">#FFFFFF</color>
+    <declare-styleable name="StateView"><attr format="reference" name="loadingViewAnimation"/><attr format="string" name="loadingText"/><attr format="reference" name="emptyImage"/><attr format="string" name="emptyText"/><attr format="reference" name="disConnectImage"/><attr format="string" name="disConnectText"/><attr format="dimension" name="tipTextSize"/><attr format="color" name="tipTextColor"/></declare-styleable>
+    <drawable name="line_background">#161823</drawable>
+    <string name="add">确定</string>
+    <string name="album_view">选择图片</string>
+    <string name="app_name">refreshrecyclerviewlibrary</string>
+    <string name="collection_dialog_cancel">取消</string>
+    <string name="collection_dialog_submit">确定</string>
+    <string name="collection_dialog_waiting">请稍等...</string>
+    <string name="collection_last_refresh_time">上次更新时间：</string>
+    <string name="collection_loading_more">正在加载...</string>
+    <string name="collection_no_more_data">没有更多数据</string>
+    <string name="collection_pull_to_refresh">下拉刷新</string>
+    <string name="collection_refresh_done">刷新完成</string>
+    <string name="collection_refreshing">正在刷新...</string>
+    <string name="collection_release_refresh">释放刷新</string>
+    <string name="image_view">单击选择</string>
+    <string name="limit_exceeded">最多能选 %d 张</string>
+    <string name="msg_compress_failed">"有压缩失败的图片"</string>
+    <string name="msg_crop_canceled">" 取消裁切"</string>
+    <string name="msg_crop_failed">"有裁切失败的图片"</string>
+    <string name="msg_operation_canceled">"操作被取消"</string>
+    <string name="selected">已选</string>
+    <string name="tip_compress">正在压缩照片...</string>
+    <string name="tip_compress_failed">"%1$s 图片压缩失败:%2$s picturePath:%3$s"</string>
+    <string name="tip_no_camera">没有相机</string>
+    <string name="tip_permission_camera">没有使用相机的权限，请在权限管理中开启</string>
+    <string name="tip_permission_camera_storage">没有使用相机和SD卡的权限，请在权限管理中开启</string>
+    <string name="tip_permission_storage">没有使用SD卡的权限，请在权限管理中开启</string>
+    <string name="tip_tips">提示</string>
+    <string name="tip_type_not_image">选择的不是图片</string>
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>窗体背景透明
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="FeelyouWindowTopBottomAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter_top</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/open_exit_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_exit_bottom</item>
+    </style>
+    <style name="StateView"/>
+    <style name="StateView.Config">
+        <item name="loadingText">正在加载中...</item>
+        <item name="emptyImage">@mipmap/ic_bttom_loading_01</item>
+        <item name="emptyText">没有数据...</item>
+        <item name="disConnectImage">@mipmap/icon_disconnect</item>
+        <item name="disConnectText">发生错误，请点击重试...</item>
+
+        <item name="tipTextSize">14sp</item>
+        <item name="tipTextColor">#8a000000</item>
+    </style>
+    <style name="commDialogTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowTopBottomAnimTheme</item>
+    </style>
+</resources>

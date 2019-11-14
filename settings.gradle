@@ -1,0 +1,1 @@
+include ':app', ':AndroidDereck', ':takephoto_library', ':core', ':greendao'

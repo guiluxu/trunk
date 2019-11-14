@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialogtips_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/version_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp18"
+            android:text="IP地址配置 :"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dp45">
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="测试"/>
+            <EditText
+                android:id="@+id/edContent1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:gravity="center_vertical|left"
+android:background="@color/transparent"
+                android:hint="222.66.154.70"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/app_bg"
+            android:layout_height="@dimen/dp1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/dp45">
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="正式"/>
+        <EditText
+            android:id="@+id/edContent2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:gravity="center_vertical|left"
+            android:background="@color/transparent"
+android:text="116.247.123.54"
+            android:hint="116.247.123.54"
+            android:textColor="#333"
+
+            android:textSize="14sp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:gravity="center"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/dp20"
+            android:paddingTop="@dimen/dp18"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp20"
+            android:visibility="gone"
+            android:paddingTop="@dimen/dp18"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp20"
+            android:paddingTop="@dimen/dp18"
+            android:visibility="gone"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <View style="@style/view_h01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="@dimen/dp20"
+            android:paddingLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_height="@dimen/dp45">
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="取消"
+                android:textColor="#666666"
+
+                android:textSize="15sp" />
+
+            <View style="@style/view_v01" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+android:background="@color/colorPrimaryDark"
+                android:text="确定"
+                android:textColor="@color/white"
+
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

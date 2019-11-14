@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            style="@style/view_h01"
+            android:layout_height="@dimen/dp10" />
+
+        <LinearLayout
+            android:id="@+id/ll_mag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp10">
+
+            <LinearLayout
+                style="@style/taskdetails_ll"
+                android:paddingLeft="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ico_xiangq_tub" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="退单信息"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <View style="@style/view_h01" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/dp35">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="拒绝人"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp14" />
+
+            </RelativeLayout>
+
+            <View style="@style/view_h01" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/dp35">
+
+                <TextView
+                    android:id="@+id/tv_timename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="拒绝时间"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp14" />
+
+            </RelativeLayout>
+
+            <View style="@style/view_h01" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35">
+
+                <TextView
+                    android:id="@+id/tv_resonname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="拒绝理由"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/tv_reson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_taskdetailrefuse_bgtv"
+                    android:paddingBottom="@dimen/dp2"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingTop="@dimen/dp2"
+                    android:text="拒绝理由"
+                    android:textColor="#ff2525"
+                    android:textSize="@dimen/sp14" />
+
+            </RelativeLayout>
+
+            <View style="@style/view_h01" />
+
+            <LinearLayout
+                android:id="@+id/ll_resonedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="备注"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp14" />
+
+                <TextView
+                    android:id="@+id/tv_resonedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

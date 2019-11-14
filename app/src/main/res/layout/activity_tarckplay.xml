@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_top"/>
+
+
+        <com.esri.arcgisruntime.mapping.view.MapView
+            android:id="@+id/mapv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.esri.arcgisruntime.mapping.view.MapView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_relative"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp45"
+            android:orientation="horizontal"
+            android:id="@+id/relative_1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center"
+                    android:text="轨迹回放"
+android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp14" />
+                <CheckBox
+                    android:id="@+id/cb_track"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/setting_checkbox_selector"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:checked="true"
+
+                    android:textSize="@dimen/dp14"
+                    android:textColor="#666666"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="过滤速度为0" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_close2"
+                android:visibility="gone"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_shijsb_close" />
+            <View style="@style/view_h01"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_2"
+            android:layout_below="@+id/relative_1"
+            >
+            <RelativeLayout
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp58"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp15"
+                android:id="@+id/relative_2_1">
+                <ImageView
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp58"
+                    android:scaleType="fitXY"
+                    android:id="@+id/man_header"
+                    android:src="@mipmap/img_xunc_tx"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp58"
+                android:layout_alignTop="@+id/relative_2_1"
+                android:layout_toRightOf="@id/relative_2_1"
+                android:layout_marginLeft="@dimen/dp15"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="巡查人员： "
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14" />
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="起始时间： "
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14" />
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="巡查里程： "
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14" />
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="@dimen/dp80"
+                android:gravity="center_vertical|right"
+                android:text="播放速度："
+                android:textSize="@dimen/dp14"
+                android:textColor="#666666"
+                android:layout_height="@dimen/dp50" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/dp10"
+    android:layout_height="@dimen/dp50">
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/isb_progresstrack"
+        android:paddingTop="@dimen/dp15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+app:isb_min="5"
+        app:isb_max="20"
+        app:isb_progress="10"
+        app:isb_seek_smoothly="true"
+app:isb_tick_texts_color="#666666"
+        app:isb_tick_texts_size="@dimen/dp14"
+        app:isb_track_progress_size="@dimen/dp4"
+        app:isb_track_background_size="@dimen/dp4"
+        app:isb_show_tick_marks_type="square"
+
+        app:isb_tick_marks_color="@color/comm_space_line_color"
+        app:isb_show_indicator="circular_bubble"
+app:isb_indicator_color="@color/colorPrimaryDark"
+        app:isb_show_tick_texts="true"
+        app:isb_thumb_adjust_auto="false"
+        app:isb_thumb_drawable="@mipmap/btn_shes_guij_sud"
+        app:isb_ticks_count="4"
+        app:isb_track_progress_color="@color/comm_space_line_color"
+        app:isb_track_background_color="@color/comm_space_line_color"/>
+
+    <!--app:isb_show_indicator=""-->
+</RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+<ImageView
+    android:id="@+id/iv_tarckpaly"
+    android:padding="@dimen/dp10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="@dimen/dp15"
+    android:layout_marginBottom="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp10"
+    android:src="@drawable/selector_ivbg_track"/>
+            <TextView
+                android:id="@+id/tv_againpaly"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp30"
+android:text="重新播放"
+                android:background="@drawable/shape_remarks_bget"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <com.dereck.library.view.LoadingWaitView
+        android:id="@+id/loadingWaitView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

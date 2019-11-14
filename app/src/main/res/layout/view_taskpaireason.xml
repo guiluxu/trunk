@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_reason"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp290"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/shape_dialogtips_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/version_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp18"
+            android:text="提示"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_tr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp10">
+
+            <RadioButton
+                android:id="@+id/rb_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_gravity="bottom"
+                android:button="@drawable/selector_rbbg_taskreason"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:text="有其他紧急任务"
+                android:textColor="@color/rg_fourthframeng_bg"
+                android:textSize="@dimen/sp13" />
+
+            <RadioButton
+                android:id="@+id/rb_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_gravity="bottom"
+                android:button="@drawable/selector_rbbg_taskreason"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:text="设备不足"
+                android:textColor="@color/rg_fourthframeng_bg"
+                android:textSize="@dimen/sp13" />
+
+            <RadioButton
+                android:id="@+id/rb_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_gravity="bottom"
+                android:button="@drawable/selector_rbbg_taskreason"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:text="人手不足"
+                android:textColor="@color/rg_fourthframeng_bg"
+                android:textSize="@dimen/sp13" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_contentdeal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/shape_remarks_bget"
+            android:gravity="top"
+            android:hint="点击描述具体内容"
+            android:maxLength="300"
+            android:padding="5dp"
+            android:paddingLeft="@dimen/dp18"
+            android:paddingRight="@dimen/dp18"
+            android:paddingTop="@dimen/dp12"
+            android:scrollbars="vertical"
+
+            android:text=""
+            android:textColor="@color/color_808080"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_cancelr"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/shape_tasklistrefuse_bgtv"
+                android:gravity="center"
+                android:text="取 消"
+                android:textColor="#2e3033"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/tv_suerr"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp20"
+                android:background="@drawable/shape_tasklistsure_bgtv"
+                android:gravity="center"
+                android:text="确 定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

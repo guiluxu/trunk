@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.wavenet.ding.qpps"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 46
+        versionName "V1.4.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters 'x86', 'armeabi', 'armeabi-v7a'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "3461957588d4951932296abb", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+        vectorDrawables.useSupportLibrary = true
+    }
+//    /Users/zoubeihua/AndroidStudioProjects/qpsw/ip_key.jks
+    ////     /Users/vip/Desktop/打包专用/ip_key.jks
+    signingConfigs {
+        debug {
+            storeFile file('../ip_key.jks')
+            storePassword '123456'
+            keyAlias 'ip_key'
+            keyPassword '123456'
+        }
+        release {
+            storeFile file('../ip_key.jks')
+            storePassword '123456'
+            keyAlias 'ip_key'
+            keyPassword '123456'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs'] // <-- Set your folder here!
+        }
+    }
+        buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+//            def channelName = variant.productFlavors[0].name
+            def date = new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+08"))
+            if (variant.buildType.name.equals('debug')) {
+                outputFileName = "青浦水务_debug_${date}_${versionName}.apk"
+            }
+            if (variant.buildType.name.equals('release')) {
+                outputFileName = "青浦水务_${date}_${versionCode}_${versionName}.apk"
+            }
+        }
+}
+}
+
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    // implementation ' com.amap.api:location:4.0.0'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile project(':AndroidDereck')
+    //compile 'com.amap.api:location:latest.integration'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.esri.arcgisruntime:arcgis-android:100.1.0'
+    implementation project(':takephoto_library')
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.3.1'
+    compile 'cn.jiguang.sdk:jcore:2.0.1'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'com.amap.api:map2d:latest.integration'
+//    implementation files('libs/AMap_Location_V4.2.0_20180809.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1249_43610_sharewithdownload_withoutGame_obfs_20180608_114954.jar')
+    implementation files('libs/httpmime-4.1.2.jar')
+    implementation files('libs/Msc.jar')
+    compile 'com.melnykov:floatingactionbutton:1.1.0'
+    compile 'com.amap.api:search:latest.integration'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation project(':core')
+    implementation project(':greendao')
+    implementation files('libs/AMap3DMap_6.8.0_AMapLocation_4.6.0_20190423.jar')
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+}

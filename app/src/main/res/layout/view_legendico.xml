@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/lfmTexttitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/app_bg"
+            android:paddingLeft="10dp"
+            android:text="基础底图"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp15" />
+
+        <RadioGroup
+            android:id="@+id/rg_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_map"
+                style="@style/layercontrol_rb"
+                android:checked="true"
+                android:drawableTop="@drawable/view_legend_planimgbg"
+                android:text="2D平面图" />
+
+            <RadioButton
+                android:id="@+id/rb_satellite"
+                style="@style/layercontrol_rb"
+                android:drawableTop="@drawable/view_legend_mapimgbg"
+                android:text="卫星图" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

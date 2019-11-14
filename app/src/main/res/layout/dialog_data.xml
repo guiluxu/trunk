@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#49979797" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/dp50"
+                android:src="@mipmap/btn_shijsb_close"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:scaleType="centerInside"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dp50" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:headerBackground="@color/colorPrimaryDark"
+            android:background="#d3e7fc"
+            android:layout_height="wrap_content"
+            android:calendarTextColor="@color/colorPrimaryDark"
+            android:theme="@style/MyDatePicker"
+            android:calendarViewShown="false"
+            android:datePickerMode="calendar"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

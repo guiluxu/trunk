@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_wdpop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/activity_top" />
+
+    <com.wavenet.ding.qpps.view.AbScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/taskdetails_ll">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ico_xiangq_tub" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="基本信息"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <View style="@style/view_h01" />
+
+            <RelativeLayout style="@style/taskdetails_ll">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="任务名称" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/taskdetails_ll"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="信息来源" />
+
+                <TextView
+                    android:id="@+id/tv_source"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/taskdetails_ll">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="紧急程度" />
+
+                <TextView
+                    android:id="@+id/tv_jinji"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/taskdetails_ll">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="任务状态" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/taskdetails_ll">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="大类" />
+
+                <TextView
+                    android:id="@+id/tv_clabig"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/taskdetails_ll">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="小类" />
+
+                <TextView
+                    android:id="@+id/tv_clasmall"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/taskdetails_ll">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="上报地点" />
+
+                <TextView
+                    android:id="@+id/tv_addr"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/taskdetails_ll">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="上报时间" />
+
+                <TextView
+                    android:id="@+id/tv_recordtime"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/taskdetails_ll"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="派单时间" />
+
+                <TextView
+                    android:id="@+id/tv_paitime"
+                    style="@style/taskdetails_tvright"
+                    android:text="" />
+
+                <View
+                    style="@style/view_h01"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/taskdetails_ll"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/taskdetails_tvleft"
+                    android:text="现场描述" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_detailreport"
+                style="@style/taskdetails_tvleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="@dimen/dp40"
+                android:paddingLeft="@dimen/dp10"
+                android:text="无" />
+
+            <View style="@style/view_h01" />
+
+            <LinearLayout
+                android:id="@+id/ll_photosb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/taskdetails_ll">
+
+                    <TextView
+                        style="@style/taskdetails_tvleft"
+                        android:text="现场信息" />
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_photosb"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp100"
+                    android:layout_marginBottom="@dimen/dp15">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <View
+                style="@style/view_h01"
+                android:layout_height="@dimen/dp10" />
+
+            <LinearLayout style="@style/taskdetails_ll">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ico_xiangq_tub" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="处置信息"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp15" />
+
+                <LinearLayout
+                    android:id="@+id/ll_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/dp10"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/ico_xiangq_yiiwc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:drawablePadding="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:text="已完成"
+                        android:textColor="#21c111"
+                        android:textSize="@dimen/sp15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/dp10"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/ico_xiangq_weiwc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:drawablePadding="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:text="未完成"
+                        android:textColor="#f80808"
+                        android:textSize="@dimen/sp15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/view_h01" />
+
+            <LinearLayout
+                android:id="@+id/ll_czdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/taskdetails_ll">
+
+                    <TextView
+                        style="@style/taskdetails_tvleft"
+                        android:text="处置时间" />
+
+                    <TextView
+                        android:id="@+id/tv_dealtime"
+                        style="@style/taskdetails_tvright"
+                        android:text="" />
+
+                    <View
+                        style="@style/view_h01"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/taskdetails_ll">
+
+                    <TextView
+                        style="@style/taskdetails_tvleft"
+                        android:text="处置人员" />
+
+                    <TextView
+                        android:id="@+id/tv_user"
+                        style="@style/taskdetails_tvright"
+                        android:text="" />
+
+                    <View
+                        style="@style/view_h01"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/taskdetails_ll"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/taskdetails_tvleft"
+                        android:text="备注" />
+
+
+                    <View
+                        style="@style/view_h01"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_dealdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dp40"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="无"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp14" />
+
+                <LinearLayout
+                    android:id="@+id/ll_photocz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout style="@style/taskdetails_ll">
+
+                        <TextView
+                            style="@style/taskdetails_tvleft"
+                            android:text="处置信息" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_photocz"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp100"
+                        android:layout_marginBottom="@dimen/dp15">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.wavenet.ding.qpps.view.ControllerTaskRefuselistView
+                android:id="@+id/c_tdlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/white"
+                android:dividerPadding="0dp" />
+
+            <com.wavenet.ding.qpps.view.ControllerTaskRefuselistView
+                android:id="@+id/c_refuselist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/white"
+                android:dividerPadding="0dp" />
+
+        </LinearLayout>
+    </com.wavenet.ding.qpps.view.AbScrollView>
+</LinearLayout>
+
+    <com.wavenet.ding.qpps.view.ViewGalleryPhoto
+        android:id="@+id/v_galleryphoto"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+    </com.wavenet.ding.qpps.view.ViewGalleryPhoto>
+</RelativeLayout>

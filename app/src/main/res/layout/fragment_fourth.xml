@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+
+            android:src="@mipmap/nav_back" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_seach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_fourthfragmentseach_bg"
+                android:drawableLeft="@mipmap/btn_more_sous"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:hint="请输入设施名称"
+                android:paddingLeft="@dimen/dp10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/sp15" />
+
+            <ImageView
+                android:id="@+id/iv_clean"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_shes_clear" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_speak"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+android:visibility="visible"
+            android:src="@mipmap/icon_shes_yuyin_sou" />
+
+        <TextView
+            android:id="@+id/tv_seach"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.esri.arcgisruntime.mapping.view.MapView
+            android:id="@+id/mapv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.esri.arcgisruntime.mapping.view.MapView>
+
+        <com.wavenet.ding.qpps.view.ControllerAdminUIView
+            android:id="@+id/c_adminui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.wavenet.ding.qpps.view.ControllerAdminUIView>
+
+        <com.wavenet.ding.qpps.view.ControllerFourthFragmentView
+            android:id="@+id/c_ffv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <com.wavenet.ding.qpps.view.ViewFourthFragmentSeachdetail
+            android:id="@+id/c_ffsd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        <com.wavenet.ding.qpps.view.ViewFourthFragmentPeopledetail
+            android:id="@+id/c_ffpd"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <com.wavenet.ding.qpps.view.viewutils.scrollLayout.ScrollLayoutView
+            android:id="@+id/scroll_down_layoutm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@color/transparent">
+            <com.wavenet.ding.qpps.view.viewutils.scrollLayout.ContentScrollView
+                android:id="@+id/content_scroll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+            <com.wavenet.ding.qpps.view.ViewDetailJcsw
+                android:id="@+id/v_jcsw"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>           <com.wavenet.ding.qpps.view.ViewDetailJcclc
+                android:id="@+id/v_jcclc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:visibility="gone"
+                android:background="@color/transparent"/>           <com.wavenet.ding.qpps.view.ViewDetailJcbz
+                android:id="@+id/v_jcbz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:visibility="visible"
+                android:background="@color/transparent"/>
+</LinearLayout>
+            </com.wavenet.ding.qpps.view.viewutils.scrollLayout.ContentScrollView>
+        </com.wavenet.ding.qpps.view.viewutils.scrollLayout.ScrollLayoutView>
+        <com.wavenet.ding.qpps.view.ViewFourthFragementLegend
+            android:id="@+id/v_legend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <com.wavenet.ding.qpps.view.ViewFourthFragmentSeachlist
+            android:id="@+id/v_ffseach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <com.dereck.library.view.LoadingWaitView
+            android:id="@+id/loadingWaitView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/getjiezhen"
+            android:text="获取街镇"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</LinearLayout>

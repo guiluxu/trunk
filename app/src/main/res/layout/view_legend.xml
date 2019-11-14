@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <View
+            android:id="@+id/v_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#b9000000" />
+        <!--android:background="#81000000"-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <com.wavenet.ding.qpps.view.AbScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp50"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/ll_mapchange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/view_legendico" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_people"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/lfmTexttitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/app_bg"
+                            android:paddingLeft="10dp"
+                            android:text="人员管理"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/sp15" />
+
+                        <LinearLayout style="@style/view_tulil">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/ico_sheshi_xuncp" />
+
+                            <TextView
+                                style="@style/view_tuliltv"
+                                android:text="巡查人员" />
+
+                            <ImageView
+                                android:id="@+id/iv_peoplexj"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="45dp"
+                                android:layout_gravity="right"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/view_tulil"
+
+                            android:layout_marginBottom="@dimen/dp10">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/ico_sheshi_yanghp" />
+
+                            <TextView
+                                style="@style/view_tuliltv"
+                                android:text="养护人员" />
+
+                            <ImageView
+                                android:id="@+id/iv_peopleyh"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_jiance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/lfmTexttitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/app_bg"
+                            android:paddingLeft="10dp"
+                            android:text="在线监测"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/sp15" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_jiancesw"
+                            android:background="@drawable/selector_llbg_fourthfragmentlegend"
+                            style="@style/view_tulil">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/ico_sheshi__shuiwjc" />
+
+                            <TextView
+                                style="@style/view_tuliltv"
+                                android:text="水位监测" />
+
+                            <ImageView
+                                android:id="@+id/iv_jcsw"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="45dp"
+                                android:layout_gravity="right"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_jianceclc"
+                            style="@style/view_tulil"
+                            android:background="@drawable/selector_llbg_fourthfragmentlegend"
+                            android:layout_marginBottom="@dimen/dp10">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/ico_sheshi__wusclc" />
+
+                            <TextView
+                                style="@style/view_tuliltv"
+                                android:text="污水处理厂" />
+
+                            <ImageView
+                                android:id="@+id/iv_jcclc"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_jiancebz"
+                            style="@style/view_tulil"
+                            android:background="@drawable/selector_llbg_fourthfragmentlegend"
+                            android:layout_marginBottom="@dimen/dp10">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/ico_sheshi__wusbz" />
+
+                            <TextView
+                                style="@style/view_tuliltv"
+                                android:text="污水泵站" />
+
+                            <ImageView
+                                android:id="@+id/iv_jcbz"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/lfmTexttitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="10dp"
+                        android:text="管网设施"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp15" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_guanwangys"
+                        style="@style/view_tulil"
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_guanw" />
+
+                        <TextView
+                            style="@style/view_tuliltv"
+                            android:text="雨水管网" />
+
+                        <ImageView
+                            android:id="@+id/iv_guanwangys"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_guanwangws"
+
+                        style="@style/view_tulil"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_wusgw" />
+
+                        <TextView
+                            style="@style/view_tuliltv"
+                            android:text="污水管网" />
+
+                        <ImageView
+                            android:id="@+id/iv_guanwangws"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/lfmTexttitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="10dp"
+                        android:text="其他设施"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp15" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_bengzhan"
+
+
+                        style="@style/view_tulil"
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_bengz" />
+
+                        <TextView
+                            style="@style/view_tuliltv"
+                            android:text="排水泵站" />
+
+                        <ImageView
+                            android:id="@+id/iv_bengzhan"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wushuichang"
+
+                        style="@style/view_tulil"
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_wusc" />
+
+                        <TextView
+                            style="@style/view_tuliltv"
+                            android:text="污水处理厂" />
+
+                        <ImageView
+                            android:id="@+id/iv_wushuichang"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pfk"
+
+                        style="@style/view_tulil"
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_paifk" />
+
+                        <TextView
+                            style="@style/view_tuliltv"
+                            android:text="排放口" />
+
+                        <ImageView
+                            android:id="@+id/iv_pfk"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/view_tulil"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_jiancj" />
+
+                        <TextView
+                            style="@style/view_tuliltv"
+                            android:text="检查井" />
+
+                        <ImageView
+                            android:id="@+id/iv_jianchajing"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_zhongdianpfk"
+
+
+                        style="@style/view_tulil"
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_paisk" />
+
+                        <TextView
+                            style="@style/view_tuliltv"
+                            android:text="重点排放口" />
+
+                        <ImageView
+                            android:id="@+id/iv_zhongdianpfk"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_paishuihu"
+                        style="@style/view_tulil"
+
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_paish" />
+
+                        <TextView
+                            style="@style/view_tuliltv"
+                            android:text="排水户" />
+
+                        <ImageView
+                            android:id="@+id/iv_paishuihu"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/selector_ivbg_fourthfragmentlegend" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/lfmTexttitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="10dp"
+                        android:text="离线底图"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp15" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_mapdownload"
+                        style="@style/view_tulil"
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend"
+
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_dit" />
+
+                        <TextView
+                            android:id="@+id/tv_mapdownload1"
+                            style="@style/view_tuliltv"
+                            android:text="地图下载"
+                            android:textSize="@dimen/dp12" />
+
+                        <TextView
+                            android:id="@+id/tv_mapdownload2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/dp20"
+                            android:text="下载"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dp12" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.wavenet.ding.qpps.view.AbScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

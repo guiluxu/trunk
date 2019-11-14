@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_drawer_layoutm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_top" />
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_topback"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+
+                    android:src="@mipmap/nav_back" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_topseach"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_fourthfragmentseach_bg"
+                        android:drawableLeft="@mipmap/btn_more_sous"
+                        android:drawablePadding="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:hint="请输入设施名称"
+                        android:paddingLeft="@dimen/dp10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:id="@+id/iv_topclean"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/btn_shes_clear" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_topspeak"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_shes_yuyin_sou"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_topseach"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="搜索"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:id="@+id/iv_shou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sx_search"
+                android:visibility="gone" />
+
+            <com.esri.arcgisruntime.mapping.view.MapView
+                android:id="@+id/mapv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.esri.arcgisruntime.mapping.view.MapView>
+
+            <com.wavenet.ding.qpps.view.ControllerMainUIView
+                android:id="@+id/c_mainui"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"></com.wavenet.ding.qpps.view.ControllerMainUIView>
+
+
+            <com.wavenet.ding.qpps.view.ControllerAddPhotoView
+                android:id="@+id/c_addphoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></com.wavenet.ding.qpps.view.ControllerAddPhotoView>
+
+
+            <com.wavenet.ding.qpps.view.ControllerTasklnewistView
+                android:id="@+id/c_tasknewlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></com.wavenet.ding.qpps.view.ControllerTasklnewistView>
+
+            <com.wavenet.ding.qpps.view.ViewonClickMapDetail
+                android:id="@+id/v_oncmd"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"></com.wavenet.ding.qpps.view.ViewonClickMapDetail>
+
+            <com.wavenet.ding.qpps.view.ViewFourthFragmentSeachdetail
+                android:id="@+id/c_xjsd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <com.wavenet.ding.qpps.view.ViewXJSeachlist
+                android:id="@+id/v_xjseach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+
+            <com.dereck.library.view.LoadingWaitView
+                android:id="@+id/loadingWaitView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.wavenet.ding.qpps.view.ControllerTasklistView
+        android:id="@+id/c_tasklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="gone"></com.wavenet.ding.qpps.view.ControllerTasklistView>
+
+    <com.wavenet.ding.qpps.view.ControllerTaskReasonView
+        android:id="@+id/c_taskreason"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.wavenet.ding.qpps.view.ControllerTaskReasonView>
+
+    <com.wavenet.ding.qpps.view.ControllerTaskReportView
+        android:id="@+id/c_taskreport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.wavenet.ding.qpps.view.ControllerTaskReportView>
+
+    <com.wavenet.ding.qpps.view.ControllerTaskDealView
+        android:id="@+id/c_taskdeal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.wavenet.ding.qpps.view.ControllerTaskDealView>
+
+    <com.wavenet.ding.qpps.view.ControllerDetailsView
+        android:id="@+id/c_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.wavenet.ding.qpps.view.ControllerDetailsView>
+
+    <com.wavenet.ding.qpps.view.ViewLegend
+        android:id="@+id/v_legend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp40"
+        android:visibility="gone" />
+</RelativeLayout>

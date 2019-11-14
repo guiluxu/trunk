@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_record"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<View
+    style="@style/view_h1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#b9fcfcfc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="@dimen/dp100"
+    android:layout_centerHorizontal="true"
+    android:layout_height="@dimen/dp100">
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/sp20"
+android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-light" />
+
+    <com.dereck.library.view.AnimRotationView
+        android:id="@+id/animRotationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/waiting" />
+</RelativeLayout>
+    <ProgressBar
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/recordProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:progressDrawable="@drawable/record_progress_bar"
+        android:background="@drawable/record_progress_bar_background"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recording_status_text"
+        android:text="正在录音"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp15"
+        android:layout_marginTop="@dimen/dp10"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_above="@+id/btnRecord"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/btnRecord"
+
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/ic_media_stop" />
+</LinearLayout>
+</LinearLayout>

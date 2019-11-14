@@ -1,0 +1,73 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+	package
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:2:5-44
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:1-20:12
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:4:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.CAMERA
+ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:6:22-62
+application
+ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:8:5-19:19
+	android:allowBackup
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:8:18-44
+activity#com.soundcloud.android.crop.CropImageActivity
+ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:9:9-82
+	android:name
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:9:19-79
+provider#android.support.v4.content.FileProvider
+ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:12:13-64
+	android:exported
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:11:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:15:13-17:54
+	android:resource
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:17:17-51
+	android:name
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml:16:17-67
+uses-sdk
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+		ADDED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml
+		INJECTED from E:\qpps\trunk\AndroidDereck\src\main\AndroidManifest.xml

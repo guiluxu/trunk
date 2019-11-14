@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_top" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择设施当前状态"
+                        android:textSize="@dimen/sp15"
+                        android:textStyle="bold"
+
+                        android:ellipsize="marquee"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp8"
+                        android:text="*"
+                        android:textColor="@color/icored"
+
+                        />
+                </LinearLayout>
+                <RadioGroup
+                    android:id="@+id/rg_tr"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_1"
+                        android:layout_width="@dimen/dp158"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="设施存在"
+                        android:background="@drawable/selectot_tvbg_jiucuo"
+                        android:textColor="@color/rg_fourthframeng_bg"
+                        android:textSize="@dimen/sp13" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2"
+                        android:layout_width="@dimen/dp158"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:button="@null"
+                        android:text="设施不存在"
+                        android:background="@drawable/selectot_tvbg_jiucuo"
+                        android:textColor="@color/rg_fourthframeng_bg"
+                        android:textSize="@dimen/sp13" />
+                </RadioGroup>
+
+                <View
+                    style="@style/view_h1"
+                    android:layout_height="@dimen/dp10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/reportll"
+
+                        android:layout_height="@dimen/dp45">
+
+                        <TextView
+                            style="@style/reportTextleft"
+                            android:text="位         置" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp8"
+                            android:text="*"
+                            android:textColor="@color/icored"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_location"
+                            style="@style/reportTextright"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/btn_shes_chongxwz" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view_h01"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10" />
+
+                    <LinearLayout
+                        style="@style/reportll"
+                        android:layout_height="@dimen/dp45">
+
+                        <TextView
+                            style="@style/reportTextleft"
+                            android:text="地         址" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp8"
+                            android:text="*"
+                            android:textColor="@color/icored"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_addr"
+                            style="@style/reportTextright"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view_h01"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10" />
+
+                    <LinearLayout
+                        style="@style/reportll"
+                        android:layout_height="@dimen/dp45">
+
+                        <TextView
+                            style="@style/reportTextleft"
+                            android:text="详细描述" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp8"
+                            android:text="*"
+                            android:textColor="@color/icored"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/et_details"
+                            style="@style/reportTextright"
+                            android:layout_height="@dimen/dp28"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:hint="请提供更多参考信息，辅助核实"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view_h01"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10" />
+
+                    <LinearLayout
+                        style="@style/reportll"
+                        android:layout_height="@dimen/dp45">
+
+                        <TextView
+                            style="@style/reportTextleft"
+                            android:text="联系方式" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp8"
+                            android:text="*"
+                            android:textColor="@color/icored"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            style="@style/reportTextright"
+                            android:layout_height="@dimen/dp28"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:hint="请输入您的手机号"
+                            android:text="" />
+                    </LinearLayout>
+
+
+                    <View
+                        style="@style/view_h01"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10" />
+
+
+                    <com.wavenet.ding.qpps.view.ViewCameraJiucuo
+                        android:id="@+id/c_camer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></com.wavenet.ding.qpps.view.ViewCameraJiucuo>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_suer"
+                    android:layout_width="@dimen/dp250"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp50"
+                    android:background="@drawable/selectot_tvbg_jiucuosure"
+                    android:gravity="center"
+                    android:text="提   交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <com.dereck.library.view.LoadingWaitView
+        android:id="@+id/loadingWaitView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <com.wavenet.ding.qpps.view.ViewGalleryPhoto
+        android:id="@+id/v_galleryphoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.wavenet.ding.qpps.view.ViewGalleryPhoto>
+
+</RelativeLayout>

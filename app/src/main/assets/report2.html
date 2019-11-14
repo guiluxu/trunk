@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>曲线表</title>
+    <script src="echarts.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+<center>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 100%;height:100%;"></div>
+    <script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('main'));
+				<!--var waterdata = window.MyBrowserAPI.getLocationData(); //拿到本地数据,并可以传给手机一些内容，可选-->
+		       		<!--var dataJ = JSON.parse(waterdata);-->
+<!--console.log(waterdata);-->
+
+			var ma="2018-10-25 24:00:00";
+var mi="2018-10-25 00:00:00";
+var chartdata="{\"seriesname\":[\"进口\",\"出口1\",\"出口2\",\"出口3\"],\"Chaoyji\":5.0,\"ymin\":0,\"xmin\":\"2018-10-25 00:00:00\",\"ymax\":5,\"xmax\":\"2018-10-25 24:00:00\",\"seriesdata\":[[{\"name\":\"2018-10-25 20:52:07\",\"value\":[\"2018-10-25 20:52:07\",0.0]}],[{\"name\":\"2018-10-25 20:52:09\",\"value\":[\"2018-10-25 20:52:09\",1.25]}],[{\"name\":\"2018-10-25 20:52:03\",\"value\":[\"2018-10-25 20:52:03\",0.42]}],[{\"name\":\"2018-10-25 20:52:09\",\"value\":[\"2018-10-25 20:52:09\",1.98]}]],\"Yuj\":1.0}";
+var d=JSON.parse(chartdata);
+console.log(chartdata);
+option = {
+    color:['#ef9c4c','#ff4a4a', 'red','#d075ff','#00c5c5','#f89f63','#65a5e5','#3385ff','#f76fb3','#22c86a','#f0dc00','#79767a','#c500be','#7863f8','#c8e565','#33cdff','#e11282','#494849','#52bdc4'],
+         legend: {
+
+         data:d.seriesname,
+                 },
+					title: {
+						text: '',
+						subtext: '',
+						x: 'center'
+
+					},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {
+							type: 'shadow'
+						}
+					},
+
+					tooltip: {
+
+						trigger: 'axis'
+					},
+					legend: {
+						left: "3",
+					},
+					xAxis: {
+						type: 'time',
+	min:d.xmin,
+	max:d.xmax,
+					interval: 3600 * 4 * 1000,
+						splitLine: {
+							show: false,
+						},
+						axisTick: {
+							show: false
+						},
+						axisLine: {
+							show: false
+						},
+						axisLabel: {
+					    	inside: false,
+						    textStyle: {
+								color: '#999'
+							},
+						formatter: function(value, index) {
+								// 格式化成月/日，只在第一个刻度显示年份
+								var date = new Date(value);
+
+				  	return date.getHours()+"时";
+							}
+						}
+					},
+					yAxis: {
+					    max:d.ymax,
+					    min:d.ymin,
+					    name:'单位：cm',
+						type: 'value',
+
+						axisLine: {
+							show: false
+						},
+						axisTick: {
+							show: false
+						},
+						axisLabel: {
+							textStyle: {
+								color: '#999'
+							}
+						}
+					},
+	 series:function(){
+                       var serie=[];
+                       for(var i = 0;i<d.seriesdata.length+2;i++){
+
+                                     if (i==0) {
+                                             var item={
+                                                      type:'line',
+                                                     markLine: {
+                                                         symbol:'none',
+                                                         lineStyle:{  type:'solid'  },
+                                                         label:{show:true}  ,
+                                                         data: [  {yAxis: d.Chaoyji}, ]
+                                                          }
+                                                     }
+                                                      serie.push(item);
+                                     } else if(i==1){
+                                            var item={
+                                                 type:'line',
+                                                   markLine: {
+                                                         symbol:'none',
+                                                         lineStyle:{  type:'solid'  },
+                                                         label:{show:true}  ,
+                                                         data: [  {yAxis: d.Yuj}, ],
+                                                        }
+                                                     }
+                                                      serie.push(item);
+                                     }else {
+                                          var item={
+                                         name:d.seriesname[i-2],
+                                          type:'line',
+                                         data:d.seriesdata[i-2]
+
+                                     }
+                                      serie.push(item);
+                                          }
+
+                                 }
+                        return serie;
+                       }()
+				};
+
+				// 使用刚指定的配置项和数据显示图表。
+				myChart.setOption(option);
+
+    </script>
+</center>
+
+</body>
+
+</html>

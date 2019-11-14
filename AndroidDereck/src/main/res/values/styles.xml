@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="commDialogTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowTopBottomAnimTheme</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>窗体背景透明
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- Activtiy 上下切换动画 -->
+    <style name="FeelyouWindowTopBottomAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter_top</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/open_exit_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_exit_bottom</item>
+    </style>
+</resources>

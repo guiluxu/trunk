@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg">
+        <!--<HorizontalScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_height="@dimen/dp45">-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp45"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg_f"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/sp5"
+                android:layout_marginTop="@dimen/sp5"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_f1"
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/selector_rbbg_fourthfragment"
+                    android:button="@null"
+                    android:checked="true"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="排水井"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp10" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_shijsb_close" />
+        </RelativeLayout>
+        <!--</HorizontalScrollView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_godetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/adapter_fourthfragment" />
+    </LinearLayout>
+</LinearLayout>

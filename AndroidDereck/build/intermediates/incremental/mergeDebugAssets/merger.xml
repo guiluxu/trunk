@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\QPPSproject\qpps\trunk\AndroidDereck\src\main\assets"/><source path="D:\QPPSproject\qpps\trunk\AndroidDereck\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\QPPSproject\qpps\trunk\AndroidDereck\src\debug\assets"/></dataSet></merger>

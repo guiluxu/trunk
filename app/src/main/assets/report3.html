@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>曲线表</title>
+    <script src="echarts.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+<center>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 100%;height:100%;"></div>
+    <script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				var myChart = echarts.init(document.getElementById('main'));
+				var waterdata = window.MyBrowserAPI.getLocationData(); //拿到本地数据,并可以传给手机一些内容，可选
+				  console.log(waterdata);
+		       	var dataJ = JSON.parse(waterdata);
+
+                option = {
+
+    color:['#ef9c4c','#ff4a4a', '#3385ff'],
+    tooltip: {
+            trigger: 'axis'
+             },
+    grid:   {
+			left: 10,
+			right: 30,
+			bottom: 0,
+			top: 10,
+			containLabel: true
+			},
+    legend: {
+            show:false,
+            data:[]
+            },
+    xAxis:  {
+    	    min:dataJ.xmin,
+			max:dataJ.xmax,
+			type: 'time',
+			interval: 3600 * 4 * 1000,
+            axisLabel: {
+					   inside: false,
+						textStyle: {
+						           color: '#999'
+						            },
+						formatter: function(value, index) {
+						                               // 格式化成月/日，只在第一个刻度显示年份
+								                        var date = new Date(value);
+				  	                                    return date.getHours()+"时";
+							                               }
+						},
+            axisLine :{
+                      show:false,
+                       },
+            splitLine: {
+							show: false,
+						},
+			axisTick: {
+						show: false
+						},
+            },
+    yAxis: {
+            axisLine :{
+                       show:false,
+                       },
+            splitLine:{
+                      lineStyle:{  type:'dashed'  },
+                      },
+
+            type: 'value',
+            max: dataJ.ymax,
+            },
+    series: [
+            {  type:'line',
+               markLine: {
+                         symbol:'none',
+                         lineStyle:{  type:'solid'  },
+                         label:{show:false}  ,
+                         data: [  {yAxis:dataJ.Yuj}, ]
+                         }
+            },
+            {   type:'line',
+                markLine: {
+                          symbol:'none',
+                          lineStyle:{  type:'solid'  },
+                          label:{show:false}  ,
+                          data: [  {yAxis: dataJ.Chaoyji }, ]
+                          }
+             },
+             {  name: dataJ.seriesname,
+                type:'line',
+                data: dataJ.seriesdata,
+             }
+    ]
+};
+				// 使用刚指定的配置项和数据显示图表。
+				myChart.setOption(option);
+
+    </script>
+</center>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wavenet.ding.qpps.view.CustomViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"></com.wavenet.ding.qpps.view.CustomViewPager>
+
+        <View style="@style/view_h01" />
+
+        <RadioGroup
+            android:id="@+id/rgadmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingTop="@dimen/dp14">
+
+            <RadioButton
+                android:id="@+id/rbadmin1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dp4"
+                android:drawableTop="@drawable/rb1"
+                android:gravity="center"
+                android:text="首 页"
+
+                android:textColor="@color/btn_login_bg"
+                android:textSize="@dimen/sp14" />
+
+            <RadioButton
+                android:id="@+id/rbadmin2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dp4"
+                android:drawableTop="@drawable/rb2"
+                android:gravity="center"
+                android:text="巡 查"
+
+                android:textColor="@color/btn_login_bg"
+                android:textSize="@dimen/sp14" />
+            <RadioButton
+                android:id="@+id/rbadmin4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dp4"
+
+                android:drawableTop="@drawable/rb3"
+                android:gravity="center"
+                android:text="设 施"
+                android:textColor="@color/btn_login_bg"
+                android:textSize="@dimen/sp14" />
+            <RadioButton
+                android:id="@+id/rbadmin3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dp4"
+                android:drawableTop="@drawable/rb4"
+                android:gravity="center"
+                android:text="养 护"
+                android:textColor="@color/btn_login_bg"
+                android:textSize="@dimen/sp14" />
+
+
+
+            <RadioButton
+                android:id="@+id/rbadmin5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/dp4"
+                android:drawableTop="@drawable/rb5"
+                android:gravity="center"
+                android:text="我 的"
+                android:textColor="@color/btn_login_bg"
+                android:textSize="@dimen/sp14" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

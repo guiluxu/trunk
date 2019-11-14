@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <View
+            android:id="@+id/v_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#b9000000" />
+        <!--android:background="#81000000"-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <com.wavenet.ding.qpps.view.AbScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp50"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/ll_mapchange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/view_legendico" />
+                    </LinearLayout>
+
+                    <com.wavenet.ding.qpps.view.WrapContentListView
+                        android:id="@+id/wclv_tc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/white"
+                        android:background="@color/white"
+                        android:dividerHeight="0dp"></com.wavenet.ding.qpps.view.WrapContentListView>
+
+
+                    <TextView
+                        style="@style/lfmTexttitle"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="10dp"
+                        android:text="离线底图"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/sp15" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_mapdownload"
+                        style="@style/view_tulil"
+                        android:visibility="gone"
+                        android:background="@drawable/selector_llbg_fourthfragmentlegend"
+
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/ico_sheshi_dit" />
+
+                        <TextView
+                            android:id="@+id/tv_mapdownload1"
+                            style="@style/view_tuliltv"
+                            android:text="地图下载"
+                            android:textSize="@dimen/dp12" />
+
+                        <TextView
+                            android:id="@+id/tv_mapdownload2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/dp20"
+                            android:text="下载"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dp12" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.wavenet.ding.qpps.view.AbScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

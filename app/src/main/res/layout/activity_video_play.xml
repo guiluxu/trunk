@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headview"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        >
+        <Button
+            android:textSize="14sp"
+            android:id="@+id/gallery_back"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="返回"
+            android:visibility="visible" />
+        <Button
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:id="@+id/bt_download"
+            android:background="@null"
+            android:text="下载"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="90dp"
+            android:visibility="gone"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_download"
+            android:scaleType="centerInside"
+            android:background="@color/colorPrimaryDark"
+            />
+
+    </RelativeLayout>
+    <SurfaceView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/headview"
+        android:layout_centerHorizontal="true"
+        android:unselectedAlpha="1"
+        android:id="@+id/surfaceView" />
+</RelativeLayout>

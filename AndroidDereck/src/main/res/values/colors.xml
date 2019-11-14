@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b65d9</color>
+    <color name="colorPrimaryDark">#3377ff</color>
+    <color name="colorAccent">#03866c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="translucentwhite">#b6ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="default_bg">#EBEBEB</color>
+    <color name="color_defaulttext">#3d4245</color>
+    <color name="color_drakgreen">#00b344</color>
+    <color name="color_lightgreen">#0fbf53</color>
+    <color name="color_drakgay">#bfbfbf</color>
+    <color name="color_ligthgay">#cccccc</color>
+    <color name="touch_view_pressed_bgcolor">#15000000</color>
+    <color name="color_reportgary">#707a80</color>
+    <color name="color_homelinbg">#f0f0f0</color>
+    <color name="color_999">#999999</color>
+    <color name="line">#e1e1e1</color>
+
+    <color name="color_plan_type_normal">#333333</color>
+    <color name="color_homemunebg2">#f1c31d</color>
+    <color name="color_plan_type">#f07151</color>
+    <color name="color_f04848">#f04848</color>
+    <color name="color_1a1a1a">#1a1a1a</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_4d4d4d">#4d4d4d</color>
+    <color name="color_62baf5">#62baf5</color>
+    <color name="color_6fc2fd">#6fc2fd</color>
+    <color name="color_004ce6">#004ce6</color>
+    <color name="color_E0E0E0">#E0E0E0</color>
+    <color name="color_2B65d9">#2B65d9</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="ededed">#ededed</color>
+
+    <!-- 默认页面背景颜色-->
+    <color name="app_bg">#f2f2f2</color>
+    <!--积水详情内容字体颜色-->
+    <color name="black_overlay">#66000000</color>
+
+    <!-- 分割线背景色 -->
+    <drawable name="line_background">#161823</drawable>
+
+
+    <!-- 控件按下时显示的颜色 -->
+    <color name="list_backgroud_color">#2fb3cb</color>
+    <color name="title_color">#0f8ec5</color>
+    <color name="content_color">#737373</color>
+
+
+    <color name="found_description_color">#707a80</color>
+    <color name="transparent_black_85">#3d4245</color>
+    <color name="radio_btn">#666666</color>
+    <color name="color_text_normal">#666666</color>
+    <color name="color_text_333333">#333333</color>
+
+    <color name="bg_color">#f2f2f2</color>
+    <color name="color_bengchegary">#EBEBEB</color>
+    <color name="comm_text_derkgray_color">#595959</color>
+    <color name="window_bg_color">#FFFFFF</color>
+    <!-- 实时积水监测-->
+    <color name="tvc_realtimewater">#595959</color>
+    <!--侧滑菜单栏条目字体-->
+    <color name="evc_lfmitme">#595959</color>
+    <!-- 画面背景色 -->
+    <color name="tasking_red">#f43232</color>
+    <color name="tasking_orange">#f98c26</color>
+    <color name="tasking_blue">#231cf5</color>
+    <color name="tasking_green">#4ab867</color>
+
+</resources>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <!--<HorizontalScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_height="@dimen/dp45">-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp45"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="人员信息"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/tv_useridentity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="(人员信息)"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_shijsb_close" />
+        </RelativeLayout>
+
+        <View style="@style/view_h01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="姓名： "
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="姓名： "
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="状态： "
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="姓名： "
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="养护公司： "
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="姓名： "
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="所属街镇： "
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:id="@+id/tv_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="姓名： "
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+        <!--</HorizontalScrollView>-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_relative"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp45"
+            android:orientation="horizontal"
+            android:id="@+id/relative_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/man_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center"
+                    android:text="人员信息"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp15" />
+                <TextView
+                    android:id="@+id/tv_useridentity2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="(人员信息)"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp15"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_close2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_shijsb_close" />
+            <View style="@style/view_h01"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_2"
+            android:layout_below="@+id/relative_1"
+            >
+            <RelativeLayout
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp58"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp15"
+                android:id="@+id/relative_2_1">
+                <ImageView
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp58"
+                    android:scaleType="fitXY"
+                    android:id="@+id/man_header"
+                    android:src="@mipmap/img_xunc_tx"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp14"
+                    android:scaleType="fitXY"
+                    android:id="@+id/man_status"
+                    android:src="@mipmap/ico_renyzt_lix"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp58"
+                android:layout_alignTop="@+id/relative_2_1"
+                android:layout_toRightOf="@id/relative_2_1"
+                android:layout_marginLeft="@dimen/dp15"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="所属街镇： "
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14" />
+                    <TextView
+                        android:id="@+id/man_jiezhen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="襄阳街道"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="联系方式： "
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14" />
+                    <TextView
+                        android:id="@+id/man_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="13233383568"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="单位名称： "
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14" />
+                    <TextView
+                        android:id="@+id/man_danweimingcheng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="污水处理厂"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dp14"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_2"
+            android:id="@+id/relative_3"
+            android:layout_marginBottom="@dimen/dp15"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/xuncha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_shes_xunc_xcjl"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/dp120"
+                />
+            <ImageView
+                android:id="@+id/shijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_shes_xunc_sjjl"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@id/xuncha"
+                android:layout_marginLeft="@dimen/dp15"/>
+            <ImageView
+                android:id="@+id/chuzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_shes_xunc_chuz"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_toRightOf="@id/shijian"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_2"
+            android:id="@+id/relative_4"
+            android:layout_marginBottom="@dimen/dp15"
+            android:visibility="visible"
+            >
+            <ImageView
+                android:id="@+id/yanghu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_shes_yangh_yhjl"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp15"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

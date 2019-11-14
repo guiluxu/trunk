@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp15"
+        android:paddingTop="@dimen/dp15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp12"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="现场信息(至少添加一张图片)"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="(音频视频长按可删除)"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_photosum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical|right"
+                android:singleLine="true"
+                android:text="0/9图片"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="多媒体文件"
+                android:textColor="#f2f2f2"
+                android:textSize="36sp" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_video"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:layout_marginRight="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_videobitmap"
+android:background="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@mipmap/play_big" />
+                <ImageView
+                    android:id="@+id/iv_delvideo"
+                    android:layout_width="@dimen/dp36"
+                    android:layout_height="@dimen/dp36"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp10"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/delete" />
+            </RelativeLayout>
+                <RelativeLayout
+                android:id="@+id/rl_sound"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:layout_marginRight="5dp"
+                    android:background="@mipmap/img_xiangq_yuyin"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/iv_delsound"
+                    android:layout_width="@dimen/dp36"
+                    android:layout_height="@dimen/dp36"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp10"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/delete" />
+            </RelativeLayout>
+
+                <!--<GridView-->
+                    <!--android:id="@+id/gv_photo"-->
+                    <!--android:layout_width="900dp"-->
+                    <!--android:layout_height="108dp"-->
+                    <!--android:horizontalSpacing="5dp"-->
+                    <!--android:numColumns="8"-->
+                    <!--android:scrollbars="none"></GridView>-->
+                <RelativeLayout
+                android:layout_width="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_photo"
+android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp100">
+
+                </android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+            </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_pic" />
+
+
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_shipin"
+
+                android:visibility="visible" />
+            <ImageView
+                android:id="@+id/iv_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@mipmap/btn_yinpin"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

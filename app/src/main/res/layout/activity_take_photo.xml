@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--app:iconLeft="@drawable/ic_back"-->
+    <!--app:iconSrc="@drawable/ic_camera"-->
+    <com.wavenet.ding.qpps.utils.cameralibrary.JCameraView
+        android:id="@+id/jcameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:duration_max="10000"
+        app:iconLeft="@drawable/ic_back"
+        app:iconMargin="20dp"
+        app:iconSize="30dp"
+        app:iconSrc="@drawable/ic_camera" />
+    <!--app:iconRight="@drawable/ic_photo"-->
+</LinearLayout><!--<com.cjt2325.cameralibrary.JCameraView--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/cameraview"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:iconMargin="20dp"--><!--app:iconWidth="30dp"--><!--app:iconSrc="@drawable/ic_camera_alt_white_24dp"/>--><!--<com.wavenet.app.patrolsystem.utils.jcamera.JCameraView--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/cameraview"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:iconMargin="20dp"--><!--app:iconWidth="30dp"--><!--app:iconSrc="@drawable/ic_camera_alt_white_24dp"/>-->
+
